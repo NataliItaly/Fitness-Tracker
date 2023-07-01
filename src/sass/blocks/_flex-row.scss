@@ -1,0 +1,38 @@
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &_center {
+    justify-content: center;
+  }
+  &_advantages {
+    align-items: flex-start;
+  }
+  &__item {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 270px;
+  }
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  &__text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: center;
+  }
+  &__img {
+    display: block;
+    width: 42px;
+    height: 42px;
+    margin: 0 auto;
+    &_advantages {
+      width: 70px;
+      height: 70px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.consultation {
+  background: url(../img/consultation-bg.png) center (center/cover) no-repeat;
+  color: $secondary-color;
+  &__title {
+    max-width: 550px;
+    color: $secondary-color;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  &__description {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+  &__content {
+    max-width: 360px;
+  }
+}

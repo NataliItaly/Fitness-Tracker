@@ -1,0 +1,35 @@
+.section {
+  padding: 80px 0;
+  position: relative;
+  color: $main-color;
+  &_first-screen {
+    padding: 166px 0 93px;
+    color: $secondary-color;
+  }
+  &__title {
+    color: inherit;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    &_advantages {
+      margin-bottom: 65px;
+    }
+    &_alternative {
+      color: $secondary-color;
+    }
+    &_hidden {
+      position: absolute;
+      clip: rect(1px, 1px, 1px, 1px);
+      padding: 0;
+      border: 0;
+      height: 1px;
+      width: 1px;
+      overflow: hidden;
+    }
+  }
+  &_alternative {
+    color: $secondary-color;
+  }
+}

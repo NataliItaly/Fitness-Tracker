@@ -1,0 +1,31 @@
+.form {
+  max-width: 330px;
+  margin-top: 36px;
+  &_mt25 {
+    margin-top: 25px;
+  }
+  &__input {
+    width: 100%;
+    padding: 0 21px;
+    color: $input-text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 54px;
+    margin-bottom: 11px;
+    border-radius: 5px;
+  }
+  &__button {
+    width: 100%;
+    font-size: 16px;
+    padding: 15px 25px;
+    word-spacing: 5px;
+    margin-top: 15px;
+  }
+  .error {
+    border: 1px solid red;
+    margin-bottom: 10px;
+  }
+  label.error {
+    border: none;
+  }
+}

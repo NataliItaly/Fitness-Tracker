@@ -1,0 +1,31 @@
+@import "base/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Museo sans Cyrl", sans-serif;
+  text-decoration: none;
+  border: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+@import "base/mixins";
+@import "blocks/header";
+@import "blocks/first-screen";
+@import "blocks/button";
+@import "blocks/section";
+@import "blocks/flex-row";
+@import "blocks/consultation";
+@import "blocks/form";
+@import "blocks/carousel";
+@import "blocks/catalog";
+@import "blocks/feedback";
+@import "blocks/footer";
+@import "blocks/overlay";
