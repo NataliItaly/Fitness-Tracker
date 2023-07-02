@@ -82,4 +82,41 @@ $(document).ready(function () {
   validateForm("#consultation-form");
   validateForm("#application-form");
   validateForm("#order-form");
+
+  $("input[name=phone]").mask("+1 (999) 999-99-99");
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 1600) {
+      $(".scroll-top").fadeIn();
+    } else {
+      $(".scroll-top").fadeOut();
+    }
+  });
+
+  $("a[href^='#first-screen']").click(function () {
+    const _href = $(this).attr("href");
+    $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+    return false;
+  });
+
+  $("form").submit(function (e) {
+    e.preventDefault();
+
+    if (!$(this).valid()) {
+      return;
+    }
+
+    $.ajax({
+      type: "POST",
+      url: "mailer/smart.php",
+      data: $(this).serialize(),
+    }).done(function () {
+      $(this).find("input").val("");
+      $("#consultation-form, #application-form, #order-form").fadeOut();
+      $("overlay, #thanks-form").fadeIn();
+
+      $("form").trigger("reset");
+    });
+    return false;
+  });
 });

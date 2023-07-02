@@ -7,6 +7,11 @@
     <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
     <link rel="stylesheet" href="css/font.css" />
     <link rel="stylesheet" href="css/slick.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
@@ -29,6 +34,7 @@
     <main class="main">
       <section
         class="section section_first-screen first-screen section_alternative"
+        id="first-screen"
       >
         <div class="container">
           <div class="first-screen__content">
@@ -86,8 +92,8 @@
             <div class="flex-row__item flex-row__item_advantages">
               <img
                 class="flex-row__img flex-row__img_advantages"
-                src="icons/advantages/cup-icon.svg"
-                alt=""
+                src="icons/advantages/cup-icon.png"
+                alt="heart icon"
               />
               <h3 class="flex-row__title">Sharing our experience</h3>
               <p class="flex-row__text">
@@ -98,8 +104,8 @@
             </div>
             <div class="flex-row__item flex-row__item_advantages">
               <img
-                class="flex-row__img flex-row__img_advantages"
-                src="icons/advantages/heart-icon.svg"
+                class="flex-row__img flex-row__img_advantages animated"
+                src="icons/advantages/heart-icon.png"
                 alt=""
               />
               <h3 class="flex-row__title">We care about health</h3>
@@ -111,7 +117,7 @@
             <div class="flex-row__item flex-row__item_advantages">
               <img
                 class="flex-row__img flex-row__img_advantages"
-                src="icons/advantages/shoe-icon.svg"
+                src="icons/advantages/shoe-icon.png"
                 alt=""
               />
               <h3 class="flex-row__title">We teach you to run</h3>
@@ -147,7 +153,6 @@
                 class="form__input"
               />
               <input
-                type="number"
                 required
                 name="phone"
                 value=""
@@ -865,7 +870,7 @@
         <div class="container">
           <h2 class="section__title">customers review</h2>
           <div class="feedback">
-            <div class="feedback__item">
+            <div class="feedback__item animate__animated animate__fadeInUp">
               <img
                 src="img/feedback/1.png"
                 alt="customer image"
@@ -874,7 +879,9 @@
                 height="170"
               />
 
-              <div class="feedback__content">
+              <div
+                class="feedback__content animate__animated animate__slideInUp"
+              >
                 <div class="feedback__title">Jane Smith</div>
                 <div class="feedback__subtitle">2 half marathons</div>
                 <div class="feedback__text">
@@ -896,7 +903,7 @@
                 </div>
               </div>
             </div>
-            <div class="feedback__item">
+            <div class="feedback__item animate__animated animate__fadeInUp">
               <img
                 src="img/feedback/2.png"
                 alt="customer image"
@@ -926,7 +933,7 @@
                 </div>
               </div>
             </div>
-            <div class="feedback__item">
+            <div class="feedback__item animate__animated animate__fadeInUp">
               <img
                 src="img/feedback/3.png"
                 alt=""
@@ -979,13 +986,25 @@
         </address>
         <a href="tel:+1234567890" class="footer__tel">+1 234 567 890</a>
         <div class="footer__social">
-          <a href="" class="footer__social-link">
+          <a
+            href="https://www.facebook.com/"
+            class="footer__social-link"
+            target="_blank"
+          >
             <img src="icons/social/facebook-icon.png" alt="facebook icon" />
           </a>
-          <a href="" class="footer__social-link">
+          <a
+            href="https://www.instagram.com/"
+            class="footer__social-link"
+            target="_blank"
+          >
             <img src="icons/social/instagram-icon.png" alt="instagram icon" />
           </a>
-          <a href="" class="footer__social-link">
+          <a
+            href="https://www.pinterest.com/"
+            class="footer__social-link"
+            target="_blank"
+          >
             <img src="icons/social/pinterest-icon.png" alt="pinterest icon" />
           </a>
         </div>
@@ -1007,7 +1026,6 @@
             class="form__input"
           />
           <input
-            type="number"
             required
             name="phone"
             value=""
@@ -1044,7 +1062,6 @@
             class="form__input"
           />
           <input
-            type="number"
             required
             name="phone"
             value=""
@@ -1063,12 +1080,16 @@
         </form>
       </div>
 
-      <div class="overlay__modal" id="thanks-modal">
+      <div class="overlay__modal" id="thanks-form">
         <div class="overlay__close">&times;</div>
         <h3 class="overlay__title">Thank you for your order</h3>
         <p class="overlay__subtitle">Our manager will contact you soon</p>
       </div>
     </div>
+
+    <a href="#first-screen" class="scroll-top" aria-label="scroll to top">
+      <img src="icons/up.svg" alt="scroll to top icon" width="50" height="50" />
+    </a>
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
